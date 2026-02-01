@@ -81,7 +81,9 @@ Check evolution after each interaction. Announce with fanfare.
 
 Pet dies if: `hunger ≥ 100` OR `happiness ≤ 0`
 
-Show memorial, offer `new pet` to restart.
+**BUT** if `immortalMode: true` in config, pets don't die — they just get very sad and hungry. Stats cap at 99/1 instead of triggering death. Default is immortal mode ON.
+
+Show memorial (if death enabled), offer `new pet` to restart.
 
 ## Decay (Cron)
 

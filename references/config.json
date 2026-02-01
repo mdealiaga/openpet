@@ -1,10 +1,11 @@
 {
   "decayIntervalMs": 7200000,
   "decay": {
-    "hunger": 15,
-    "happiness": -10,
-    "energy": -5
+    "hunger": 8,
+    "happiness": -5,
+    "energy": -3
   },
+  "immortalMode": true,
   "actions": {
     "feed": { "hunger": -30, "happiness": 5 },
     "play": { "happiness": 25, "energy": -20 },
