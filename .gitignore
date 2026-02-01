@@ -1,0 +1,4 @@
+# Pet state files (user data, not part of skill)
+/pets/
+*.json
+!references/*.json
