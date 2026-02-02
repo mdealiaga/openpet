@@ -96,11 +96,12 @@ Set up cron job `openpet-tick` every 2 hours:
 
 ## Platform Detection
 
-Extract from message context:
-- Discord: `discord_{userId}`
-- WhatsApp: `whatsapp_{phoneNumber}`
-- Telegram: `telegram_{chatId}`
-- Signal: `signal_{uuid}`
+Extract from message context. For group chats, include the group ID for per-chat pets:
+- Discord: `discord_{oderId}` (servers share), or `discord_{oderId}_{guildId}` for per-server
+- WhatsApp DM: `whatsapp_{phoneNumber}`
+- WhatsApp Group: `whatsapp_{phoneNumber}_{groupId}`
+- Telegram: `telegram_{userId}` or `telegram_{userId}_{chatId}` for groups
+- Signal: `signal_{uuid}` or `signal_{uuid}_{groupId}` for groups
 
 ## Alerts
 
